@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+  
+  <head>
+     <meta charset="utf-8"> 
+  </head>
+  
+    <body>
+
+    <h2>Calculando média da disciplina X.</h2>
+  
+      <script>
+
+           var nota1 = parseInt(prompt("Primeira nota: ")) 
+           var nota2 = parseInt(prompt("Segunda nota: "))
+           var nota3 = parseInt(prompt("Terceira nota: ")) 
+           var nota4 = parseInt(prompt("Quarta nota: ")) 
+  
+          var notas = [nota1, nota2, nota3, nota4]
+  
+          var soma = notas.reduce(( prevVal, elem ) => prevVal + elem /4, 0);
+  
+          document.write("Média das notas: " + soma);
+  
+      </script>
+    </body>
+  </html>
